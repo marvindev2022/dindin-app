@@ -1,0 +1,54 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 480px;
+  min-height: 600px;
+
+  position: relative;
+
+  border-radius: 20px;
+  padding: 40px;
+
+  background-color: white;
+}
+
+.modal h2 {
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  text-align: left;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin-top: 48px;
+}
+
+.modal form label {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #484848;
+}
+
+.modal button {
+  width: 250px;
+  margin-top: 42px;
+}
+
+.close-button {
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+  top: 48px;
+  right: 48px;
+
+  cursor: pointer;
+}

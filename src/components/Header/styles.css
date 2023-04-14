@@ -1,0 +1,36 @@
+header {
+    width: 100%;
+    height: 224px;
+    background: linear-gradient(90.23deg, #05EDE3 0.02%, #645FFB 99.63%);
+
+    display: flex;
+    justify-content: center;
+    padding: 40px 50px;
+}
+
+.content-header {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+.content-header img {
+    cursor: pointer;
+}
+
+.container-sign-out {
+    display: flex;
+    align-items: center;
+}
+
+.profile-area {
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.sign-out {
+    margin-left: 16px;
+    height: 24px;
+}

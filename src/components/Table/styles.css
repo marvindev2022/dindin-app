@@ -1,0 +1,92 @@
+.container-table {
+    width: 100%;
+    min-width: 800px;
+    min-height: 500px;
+    font-family: 'Lato', sans-serif;
+}
+
+.table-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 58px;
+
+    padding: 0 24px;
+
+    background-color: #FAFAFA;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    font-size: 16px;
+}
+
+.table-column-small {
+    width: 10%;
+    text-align: center;
+}
+
+.table-column-middle {
+    width: 12%;
+    text-align: center;
+}
+
+.table-column-big {
+    width: 25%;
+    text-align: center;
+}
+
+.table-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 56px;
+  
+    margin-top: 8px;
+    padding: 0 24px;
+  
+    position: relative;
+    
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.content-date {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-align: start;
+}
+
+.content-date strong {
+    margin-right: 4px;
+}
+
+.content-date img {
+    width: 12px;
+    margin-top: 4px;
+}
+
+.action-buttons img {
+    cursor: pointer;
+}
+
+.values {
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.positive-value {
+    color: #7B61FF;
+}
+
+.negative-value {
+    color: #FA8C10;
+}

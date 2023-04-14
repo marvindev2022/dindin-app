@@ -1,0 +1,14 @@
+input,
+select {
+    height: 58px;
+    padding: 0 16px;
+   
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+   
+    border-radius: 5px;
+    border: 1px solid #555555;
+   
+    background-color: #FFFFFF;
+}

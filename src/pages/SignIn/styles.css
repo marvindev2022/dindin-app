@@ -1,0 +1,75 @@
+.container-sign-in {
+    background-image: url(../../assets/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    font-family: 'Rubik', sans-serif;
+}
+
+.content-sign-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.left h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.left span {
+    color: #7978D9;
+}
+
+.left h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 24px;
+}
+
+.left button {
+    width: 235px;
+    margin-top: 40px;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px;
+    min-height: 420px;
+    width: 400px;
+}
+
+.right h2 {
+    color: #7978D9;
+    font-weight: 500;
+}
+
+.right form button {
+    margin-top: 52px;
+}
