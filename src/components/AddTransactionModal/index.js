@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CloseIcon from "../../assets/close-icon.svg";
 import api from "../../services/api";
+import getDateParts from "../../utils/formatters";
 import { notifyError, notifySucess } from "../../utils/notifications";
 import { loadCategories, loadTransactions } from "../../utils/requisitions";
 import { getItem } from "../../utils/storage";
@@ -42,18 +43,8 @@ function AddTransactionModal({ open, handleClose, setTransactions }) {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    let day;
-    let month;
-    let year;
-    if (form.date.length === 8) {
-      day = `${form.date[0]}${form.date[1]}`;
-      month = `${form.date[2]}${form.date[3]}`;
-      year = `${form.date[4]}${form.date[5]}${form.date[6]}${form.date[7]}`;
-    } else {
-      day = `${form.date[0]}${form.date[1]}`;
-      month = `${form.date[3]}${form.date[4]}`;
-      year = `${form.date[6]}${form.date[7]}${form.date[8]}${form.date[9]}`;
-    }
+
+    const { day, month, year } = getDateParts(form.date);
 
     try {
       const response = await api.post(
@@ -63,7 +54,7 @@ function AddTransactionModal({ open, handleClose, setTransactions }) {
           descricao: form.description,
           valor: form.value,
           data: new Date(`${year}-${month}-${day}`),
-          categoria_id: "1",
+          categoria_id: form.category.id,
         },
         {
           headers: {
@@ -182,7 +173,6 @@ function AddTransactionModal({ open, handleClose, setTransactions }) {
       )}
     </>
   );
-
 }
 
 export default AddTransactionModal;
